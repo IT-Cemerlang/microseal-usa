@@ -1,0 +1,7 @@
+{
+  "name": "Microseal™ Smart Surface Protection",
+  "description": "A high-converting, modern landing page for Microseal surface protection technology, featuring interactive charts, a tech-driven design, and an AI-powered technical assistant.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
