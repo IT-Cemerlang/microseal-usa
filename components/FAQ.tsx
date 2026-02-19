@@ -6,7 +6,7 @@ const FAQItem: React.FC<{ question: string; answer: string }> = ({ question, ans
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="border-b border-white/5">
+    <div className="border-b border-white/10">
       <button 
         onClick={() => setIsOpen(!isOpen)}
         className="w-full py-6 flex justify-between items-center text-left"

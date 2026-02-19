@@ -51,7 +51,7 @@ const CTA: React.FC = () => {
 
   return (
     <section id="consultation" className="py-24 bg-slate-900 relative">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-sky-500/10 blur-[100px] rounded-full"></div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-sky-500/5 blur-[100px] rounded-full"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -68,7 +68,7 @@ const CTA: React.FC = () => {
             
             <div className="space-y-6">
               <div className="flex items-center gap-6">
-                <div className="w-14 h-14 bg-sky-500/10 rounded-2xl flex items-center justify-center text-sky-500">
+                <div className="w-14 h-14 bg-sky-500/10 border border-sky-500/20 rounded-2xl flex items-center justify-center text-sky-500">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                 </div>
                 <div>
@@ -79,10 +79,10 @@ const CTA: React.FC = () => {
             </div>
           </div>
 
-          <div className="p-8 md:p-12 bg-slate-950 border border-white/5 rounded-[48px] shadow-2xl relative overflow-hidden">
+          <div className="p-8 md:p-12 bg-slate-950 border border-white/10 rounded-[48px] shadow-2xl relative overflow-hidden">
             {isSubmitted ? (
               <div className="flex flex-col items-center text-center py-12 animate-in fade-in zoom-in duration-500">
-                <div className="w-20 h-20 bg-sky-500/20 text-sky-500 rounded-full flex items-center justify-center mb-6">
+                <div className="w-20 h-20 bg-sky-500/10 text-sky-500 rounded-full flex items-center justify-center mb-6 border border-sky-500/20">
                   <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                 </div>
                 <h4 className="text-2xl font-bold text-white mb-4">{t('Draft Email Siap!', 'Email Draft Ready!')}</h4>
@@ -143,7 +143,7 @@ const CTA: React.FC = () => {
                   <button 
                     disabled={isSubmitting}
                     type="submit" 
-                    className="w-full py-4 bg-sky-500 hover:bg-sky-400 disabled:bg-slate-700 disabled:cursor-not-allowed text-slate-950 font-black rounded-xl transition-all shadow-lg flex items-center justify-center gap-3 group"
+                    className="w-full py-4 bg-sky-500 hover:bg-sky-400 disabled:bg-slate-800 disabled:cursor-not-allowed text-slate-950 font-black rounded-xl transition-all shadow-lg flex items-center justify-center gap-3 group"
                   >
                     {isSubmitting ? (
                       <>

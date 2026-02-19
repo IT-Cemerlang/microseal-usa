@@ -66,6 +66,33 @@ const dossiers: Record<string, TechnicalDossier> = {
     packaging: [
       { size: '2.0 l (A+B components)', pallet: '96 litres (48 sets)', item: '102 02 739' }
     ]
+  },
+  'micro-stone-protect': {
+    id: 'micro-stone-protect',
+    name: 'Microseal® Stone Shield',
+    tagline: 'Invisible Impregnation for Natural Stone',
+    description: 'Premium penetrating sealer for natural stone, concrete, and terracotta. Preserves natural look while repelling water, oil, and organic stains. Ideal for high-humidity environments.',
+    advantages: [
+      'Natural matte finish (invisible)',
+      'Excellent oil & water repellency',
+      'UV stable & non-yellowing',
+      '100% Breathable (vapor permeable)'
+    ],
+    specs: [
+      { label: 'Base', value: 'Water-based Silane/Siloxane' },
+      { label: 'VOC', value: '< 10 g/L' },
+      { label: 'pH', value: '7-8' },
+      { label: 'Cure Time', value: '24 Hours' }
+    ],
+    application: [
+      { title: 'Preparation', steps: ['Surface must be dry and clean.', 'Remove all wax, oil, or grease.', 'Test on small area first.'] },
+      { title: 'Application', steps: ['Apply with low-pressure spray or roller.', 'Ensure saturation of surface.', 'Remove excess liquid after 10-15 mins.'] }
+    ],
+    packaging: [
+      { size: '5 Litre Jerrycan', pallet: '120 cans (600L)', item: 'MS-SS-005' },
+      { size: '20 Litre Pail', pallet: '32 pails (640L)', item: 'MS-SS-020' }
+    ],
+    consumption: '1 Litre covers approx. 8-12 m² depending on porosity'
   }
 };
 
@@ -100,6 +127,19 @@ const ApplicationAreas: React.FC = () => {
         result: 'Thermal crack prevention + waterproof integrity.'
       },
       products: ['tok-melt-n2', 'tok-rep']
+    },
+    {
+      id: 'residential',
+      name: t('Residensial', 'Residential'),
+      items: [t('Vila Mewah', 'Luxury Villas'), t('Dek Kolam Renang', 'Pool Decks')],
+      image: 'https://images.unsplash.com/photo-1600596542815-2495db98dada?auto=format&fit=crop&q=80&w=800',
+      caseStudy: {
+        project: t('Private Villa, Bali', 'Private Villa, Bali'),
+        problem: t('Kelembapan tinggi menyebabkan lumut pada fasad batu alam.', 'High humidity causing mold on natural stone facade.'),
+        solution: 'Microseal Stone Shield',
+        result: 'Zero mold growth, 100% breathable.'
+      },
+      products: ['micro-stone-protect']
     }
   ];
 

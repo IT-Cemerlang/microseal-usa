@@ -63,7 +63,7 @@ const HowItWorks: React.FC = () => {
                        <span>{t('Breathability (Pori Terbuka)', 'Breathability (Pore Openness)')}</span>
                        <span>98%</span>
                     </div>
-                    <div className="h-1.5 w-full bg-slate-900 rounded-full overflow-hidden">
+                    <div className="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
                        <div className="h-full w-[98%] bg-sky-500"></div>
                     </div>
                  </div>
@@ -72,7 +72,7 @@ const HowItWorks: React.FC = () => {
                        <span>{t('Sudut Kontak Hidrofobik', 'Hydrophobic Contact Angle')}</span>
                        <span>120°</span>
                     </div>
-                    <div className="h-1.5 w-full bg-slate-900 rounded-full overflow-hidden">
+                    <div className="h-1.5 w-full bg-slate-800 rounded-full overflow-hidden">
                        <div className="h-full w-[85%] bg-sky-500"></div>
                     </div>
                  </div>

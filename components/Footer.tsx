@@ -39,7 +39,7 @@ const Footer: React.FC = () => {
               <div className="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center font-bold text-slate-950 italic">M</div>
               <span className="text-xl font-bold tracking-tighter text-white">MICROSEAL<span className="text-sky-500">™</span></span>
             </div>
-            <p className="text-slate-500 max-w-sm leading-relaxed mb-8">
+            <p className="text-slate-400 max-w-sm leading-relaxed mb-8">
               {t(
                 'Pionir teknologi perlindungan permukaan cerdas. Menggabungkan nano-science dan engineering untuk durabilitas aset tanpa kompromi.',
                 'Pioneer in smart surface protection technology. Combining nano-science and engineering for uncompromising asset durability.'
@@ -50,7 +50,7 @@ const Footer: React.FC = () => {
                  <a 
                    key={social} 
                    href="#" 
-                   className="text-slate-600 hover:text-sky-500 transition-colors text-sm font-bold uppercase tracking-widest"
+                   className="text-slate-400 hover:text-sky-500 transition-colors text-sm font-bold uppercase tracking-widest"
                  >
                    {social}
                  </a>
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
           
           <div>
             <h4 className="text-white font-bold mb-8 uppercase tracking-widest text-xs">{t('Solusi', 'Solutions')}</h4>
-            <ul className="space-y-4 text-slate-500 text-sm">
+            <ul className="space-y-4 text-slate-400 text-sm">
               {solutions.map((link) => (
                 <li key={link.id}>
                   <a 
@@ -78,7 +78,7 @@ const Footer: React.FC = () => {
 
           <div>
             <h4 className="text-white font-bold mb-8 uppercase tracking-widest text-xs">{t('Perusahaan', 'Company')}</h4>
-            <ul className="space-y-4 text-slate-500 text-sm">
+            <ul className="space-y-4 text-slate-400 text-sm">
               {company.map((link) => (
                 <li key={link.id}>
                   <a 

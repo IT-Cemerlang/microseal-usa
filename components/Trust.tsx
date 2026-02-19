@@ -50,7 +50,7 @@ const Trust: React.FC = () => {
   return (
     <section className="py-24 bg-slate-950 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="p-1 gap-12 bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 rounded-[48px] overflow-hidden">
+        <div className="p-1 gap-12 bg-gradient-to-br from-slate-900 to-slate-950 border border-white/5 rounded-[48px] overflow-hidden shadow-xl">
           <div className="grid lg:grid-cols-2">
             
             {/* Left Content */}
@@ -77,7 +77,7 @@ const Trust: React.FC = () => {
                     className={`p-6 rounded-3xl border transition-all duration-300 text-center group flex flex-col items-center gap-3 ${
                       activeStandard === std.id 
                         ? 'bg-sky-500 border-sky-500 shadow-[0_0_30px_rgba(14,165,233,0.3)]' 
-                        : 'bg-white/5 border-white/10 hover:border-white/30 hover:bg-white/[0.08]'
+                        : 'bg-slate-950 border-white/5 hover:border-white/20'
                     }`}
                   >
                     <span className="text-2xl mb-1">{std.icon}</span>
@@ -93,19 +93,19 @@ const Trust: React.FC = () => {
             </div>
 
             {/* Right Display / Details Panel */}
-            <div className="relative bg-slate-900/50 border-l border-white/5 flex items-center justify-center p-12 min-h-[400px]">
+            <div className="relative bg-slate-900 border-l border-white/5 flex items-center justify-center p-12 min-h-[400px]">
               {activeStandard ? (
                 <div className="animate-in fade-in slide-in-from-right-8 duration-500 text-center max-w-sm">
-                  <div className="w-20 h-20 bg-sky-500/20 rounded-full flex items-center justify-center text-4xl mx-auto mb-8 border border-sky-500/30">
+                  <div className="w-20 h-20 bg-sky-500/10 rounded-full flex items-center justify-center text-4xl mx-auto mb-8 border border-sky-500/20">
                     {standards.find(s => s.id === activeStandard)?.icon}
                   </div>
                   <h4 className="text-2xl font-black text-white mb-2 uppercase italic tracking-tighter">
                     {standards.find(s => s.id === activeStandard)?.shortTitle}
                   </h4>
-                  <div className="text-sky-500 text-xs font-black uppercase tracking-[0.2em] mb-6">
+                  <div className="text-sky-400 text-xs font-black uppercase tracking-[0.2em] mb-6">
                     {standards.find(s => s.id === activeStandard)?.tagline}
                   </div>
-                  <p className="text-slate-300 text-lg leading-relaxed font-medium">
+                  <p className="text-slate-400 text-lg leading-relaxed font-medium">
                     {standards.find(s => s.id === activeStandard)?.detail}
                   </p>
                   <button 
@@ -123,9 +123,9 @@ const Trust: React.FC = () => {
                     {t('Pilih Standar untuk Detail', 'Select Standard for Details')}
                   </h4>
                   <div className="mt-8 flex justify-center gap-6 opacity-20 group-hover:opacity-100 transition-opacity">
-                    <div className="w-12 h-12 rounded-full border border-white/20"></div>
-                    <div className="w-12 h-12 rounded-full border border-white/20"></div>
-                    <div className="w-12 h-12 rounded-full border border-white/20"></div>
+                    <div className="w-12 h-12 rounded-full border border-white/10"></div>
+                    <div className="w-12 h-12 rounded-full border border-white/10"></div>
+                    <div className="w-12 h-12 rounded-full border border-white/10"></div>
                   </div>
                 </div>
               )}
@@ -135,14 +135,6 @@ const Trust: React.FC = () => {
             </div>
 
           </div>
-        </div>
-
-        {/* Brand Logos Bar */}
-        <div className="mt-16 flex flex-wrap justify-center items-center gap-x-16 gap-y-8 opacity-20 grayscale hover:opacity-60 transition-all duration-1000">
-           <div className="text-xl font-black text-white italic tracking-tighter uppercase">INDUSTRIAL_CORP</div>
-           <div className="text-xl font-black text-white italic tracking-tighter uppercase">BUILD_TECH</div>
-           <div className="text-xl font-black text-white italic tracking-tighter uppercase">NANO_LABS</div>
-           <div className="text-xl font-black text-white italic tracking-tighter uppercase">STRUCT_ENG</div>
         </div>
       </div>
     </section>

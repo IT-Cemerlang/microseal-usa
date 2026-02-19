@@ -74,14 +74,6 @@ const Navbar: React.FC = () => {
                 {link.label}
               </a>
             ))}
-            
-            <a 
-              href="#consultation"
-              onClick={(e) => scrollToSection(e, 'consultation')}
-              className="px-5 py-2.5 bg-sky-500/10 border border-sky-500/20 text-sky-400 text-xs font-black rounded-xl hover:bg-sky-500 hover:text-slate-950 transition-all uppercase tracking-widest"
-            >
-              {t('Mulai Sekarang', 'Get Started')}
-            </a>
           </div>
 
           <div className="flex md:hidden items-center gap-3">

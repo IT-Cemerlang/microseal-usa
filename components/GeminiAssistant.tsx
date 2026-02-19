@@ -10,8 +10,8 @@ const GeminiAssistant: React.FC = () => {
     { 
       role: 'ai', 
       text: t(
-        'Halo! Saya Micro-AI Assistant. Ada yang bisa saya bantu terkait teknologi perlindungan Microseal™?',
-        'Hello! I am Micro-AI Assistant. How can I help you regarding Microseal™ protection technology?'
+        'Halo! Saya Micro-AI Assistant. Apakah Anda butuh bantuan dengan produk atau aplikasi Microseal™ tertentu?',
+        'Hello! I am Micro-AI Assistant. Do you need help with specific Microseal™ products or applications?'
       ) 
     }
   ]);
@@ -39,8 +39,7 @@ const GeminiAssistant: React.FC = () => {
         parts: [{ text: msg.text }]
       }));
 
-      // Fixed to English instructions as requested
-      const sysInstruction = `You are a professional technical expert for Microseal™, a smart surface protection technology. Respond ONLY in English. Focus on nano-tech: molecular bonding, 5-10 years longevity. Be authoritative, helpful, and technically precise.`;
+      const sysInstruction = `You are a Microseal™ technical expert. Focus on nano-tech (molecular bonding, 5-10y longevity). Be concise and technically precise. Always ask if the user needs help with specific products or applications. Respond in the user's language.`;
 
       const response = await ai.models.generateContent({
         model: 'gemini-3-flash-preview',

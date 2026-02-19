@@ -169,7 +169,7 @@ const Certifications: React.FC = () => {
           <div className="hidden md:block">
              <div className="flex -space-x-4">
                {[1,2,3,4].map(i => (
-                 <div key={i} className="w-12 h-12 rounded-full border-2 border-slate-900 bg-slate-800 flex items-center justify-center text-[10px] font-bold text-slate-500 shadow-xl">LAB</div>
+                 <div key={i} className="w-12 h-12 rounded-full border-2 border-white bg-slate-100 flex items-center justify-center text-[10px] font-bold text-slate-500 shadow-xl">LAB</div>
                ))}
              </div>
           </div>
@@ -177,21 +177,21 @@ const Certifications: React.FC = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {certs.map((cert, i) => (
-            <div key={i} className="group p-8 bg-slate-950 border border-white/5 rounded-[32px] hover:border-sky-500/30 transition-all duration-500 hover:-translate-y-2">
+            <div key={i} className="group p-8 bg-slate-950 border border-white/5 rounded-[32px] hover:border-sky-500/30 transition-all duration-500 hover:-translate-y-2 shadow-sm">
               <div className="w-14 h-14 rounded-2xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-500 mb-8 group-hover:bg-sky-500 group-hover:text-slate-950 transition-colors">
                 {cert.icon}
               </div>
-              <div className="text-[10px] text-sky-500 font-black uppercase tracking-[0.2em] mb-2">{cert.org}</div>
+              <div className="text-[10px] text-sky-400 font-black uppercase tracking-[0.2em] mb-2">{cert.org}</div>
               <h4 className="text-xl font-bold text-white mb-4">{cert.title}</h4>
-              <p className="text-sm text-slate-500 leading-relaxed">{cert.desc}</p>
+              <p className="text-sm text-slate-400 leading-relaxed">{cert.desc}</p>
             </div>
           ))}
         </div>
 
-        <div className="mt-16 p-8 md:p-12 rounded-[40px] bg-slate-950 border border-white/5 flex flex-col md:flex-row items-center gap-12 relative overflow-hidden group">
+        <div className="mt-16 p-8 md:p-12 rounded-[40px] bg-slate-950 border border-white/5 flex flex-col md:flex-row items-center gap-12 relative overflow-hidden group shadow-lg">
            <div className="absolute inset-0 bg-sky-500/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
            <div className="flex-1 relative z-10">
-              <div className="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-500 text-[10px] font-black uppercase tracking-widest rounded mb-4">{t('Verifikasi Aktif', 'Verification Active')}</div>
+              <div className="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-500 text-[10px] font-black uppercase tracking-widest rounded mb-4 border border-emerald-500/20">{t('Verifikasi Aktif', 'Verification Active')}</div>
               <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">{t('Minta Dossier Teknis', 'Request Technical Dossier')}</h3>
               <p className="text-slate-400 text-sm md:text-base leading-relaxed mb-8 max-w-xl">
                 {t('Kami menyediakan laporan hasil uji laboratorium lengkap (Full Lab Reports) untuk spesifikasi proyek skala besar. Dokumen ini mencakup analisis molekuler dan uji ketahanan jangka panjang.', 'We provide complete laboratory test reports (Full Lab Reports) for large-scale project specifications. This document includes molecular analysis and long-term durability tests.')}
@@ -218,7 +218,7 @@ const Certifications: React.FC = () => {
               <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1576086213369-97a306d36557?auto=format&fit=crop&q=80&w=800')] bg-cover transition-transform duration-700 group-hover:scale-110"></div>
               <div className="relative z-10 text-center px-6">
                 <div className="text-5xl mb-4 filter drop-shadow-2xl">📄</div>
-                <div className="text-[10px] font-black text-white uppercase tracking-widest bg-slate-950/80 px-4 py-2 rounded-full backdrop-blur-md border border-white/5">
+                <div className="text-[10px] font-black text-white uppercase tracking-widest bg-slate-950/80 px-4 py-2 rounded-full backdrop-blur-md border border-white/10">
                   Certified Batch 2024.08
                 </div>
               </div>
